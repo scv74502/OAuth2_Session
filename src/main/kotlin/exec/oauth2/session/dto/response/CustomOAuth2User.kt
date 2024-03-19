@@ -17,7 +17,7 @@ class CustomOAuth2User(
 //        collection.add(GrantedAuthority() {
 //        })
 //    }
-    override fun getAuthorities(): MutableCollection<out GrantedAuthority?>? {
+    override fun getAuthorities(): MutableCollection<out GrantedAuthority?> {
         val collection: MutableCollection<GrantedAuthority> = ArrayList()
 
         collection.add(GrantedAuthority { role })
